@@ -1,13 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import Root from './routes';
 
 function App() {
@@ -21,6 +14,7 @@ function App() {
             <Nav.Link href="/syllabus">Syllabus</Nav.Link>
             <Nav.Link href="/class">Class Works</Nav.Link>
             <Nav.Link href="/presentation">Presentation</Nav.Link>
+            <Nav.Link href="/grouproles">Group Roles</Nav.Link>
             <NavDropdown title="Direct Links" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://www.turnitin.com/s_class_portfolio.asp?r=82.6055802736256&svr=29&lang=en_us&aid=57444&cid=25510210">
                 Turnitin

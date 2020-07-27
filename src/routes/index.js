@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 import ClassInfo from '../pages/ClassInfo/ClassInfo';
 import Syllabus from '../pages/Syllabus/Syllabus';
 import Presentation from '../pages/Presentation/Presentation';
+import GroupRoles from '../pages/GroupRoles/GroupRoles';
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
         <Route path="/class" exact component={ClassInfo} />
         <Route path="/syllabus" exact component={Syllabus} />
         <Route path="/presentation" exact component={Presentation} />
+        <Route path="/grouproles" exact component={GroupRoles} />
       </Switch>
     </BrowserRouter>
   );
