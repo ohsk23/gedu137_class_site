@@ -51,7 +51,9 @@ const PodcastPanel = ({title, time, date, link}) => {
       }}>
       <div>
         <div style={{fontSize: 14, lineHeight: '16px'}}>{date}</div>
-        <div style={{fontWeight: 600, fontSize: 22}}>{title}</div>
+        <div style={{fontWeight: 600, fontSize: 22, overflow: 'hidden'}}>
+          {title}
+        </div>
         <div>{`Podcast Length: ${time}.`}</div>
       </div>
       <Button style={{alignSelf: 'center'}} href={link}>

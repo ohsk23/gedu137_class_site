@@ -9,17 +9,33 @@ const GroupRoles = () => {
         0 will be awarded.
       </div>
       <div style={{paddingTop: 10, paddingBottom: 10}}>
-        <h3>Role#1: Discussion Director</h3>As discussion director, you are the
+        <h3>Role#1: Discussion Director</h3>
+        {/* As discussion director, you are the
         leader of the conversation. It is your job to make sure that each member
-        plays an active role and to begin the discussion. Make 1 discussion
-        topics/questions that you want to use in your group discussion. You can
-        make questions related to the podcast/documentary with open-ended
-        questions with no fixed answers. Make your questions starting with Who,
-        What, Why, When, Where, How, or What if. Avoid questions that directly
-        ask the content of the podcast/documentary or that have one answer
-        and/or a simple answer. Be sure to allow others to answer the question
-        before you provide your answer. At the bottom of your homework entry,
-        please provide your questions and your answers.
+        plays an active role and to begin the discussion.{' '}
+        <b>Make 1 discussion topics/questions</b> that you want to use in your
+        group discussion. You can make questions related to the
+        podcast/documentary with{' '}
+        <b>open-ended questions with no fixed answers</b>. Make your questions
+        starting with Who, What, Why, When, Where, How, or What if. Avoid
+        questions that directly ask the content of the podcast/documentary or
+        that have one answer and/or a simple answer. Be sure to allow others to
+        answer the question before you provide your answer. At the bottom of
+        your homework entry, please provide your questions and your answers. */}
+        <h5>What to do</h5>
+        <li>
+          Make 1 discussion topic or question related to the podcast with
+          open-ended questions with no fixed answers.
+        </li>
+        <li>
+          Make your questions starting with Who, What, Why, When, Where, How, or
+          What if.
+        </li>
+        <li>
+          Avoid questions that directly ask the content of the
+          podcast/documentary or that have one answer and/or a simple answer.
+        </li>
+        <li>Prepare your own answer.</li>
         <h5>When you meet with your group</h5>
         <ol>
           <li>
@@ -39,12 +55,23 @@ const GroupRoles = () => {
       </div>
       <div style={{paddingTop: 10, paddingBottom: 10}}>
         <h3>Role# 2: Connector </h3>
+        <h5>What to do</h5>
         <div>
+          <li>
+            Make 1 question and your own answer which can connect podcast to
+            real life.
+          </li>
+          <li>
+            Try to talk about opinions, past experiences, hopes, or hypothetical
+            situations.
+          </li>
+        </div>
+        {/* <div>
           As a connector, it is your job to connect the podcast/documentary to
           real life. This is a very open activity during which you want to make
           your group members speak as much as possible. Connect the
           podcast/documentary with your experience and others' life experience.
-        </div>
+        </div> */}
         <h5>Ideas for Connector role</h5>
         <div>
           <li>Your own past experiences </li>
@@ -52,7 +79,7 @@ const GroupRoles = () => {
           <li>Stories in the news Similar events at other times and places</li>
           <li>Other people or problems that you are reminded of</li>
         </div>
-        <div>
+        {/* <div>
           If you have similar experience or know others that do, connect them
           with the podcast/documentary. Provide your questions at the bottom of
           your homework entry and answer your own questions. The main goal of
@@ -61,7 +88,7 @@ const GroupRoles = () => {
           here. Try to get your group members to talk about their opinions, past
           experiences, hopes, or hypothetical situations (What would you do
           if…?).
-        </div>
+        </div> */}
         <h5>When you meet with your group</h5>
         <ol>
           <li>
@@ -82,7 +109,18 @@ const GroupRoles = () => {
       <div style={{paddingTop: 10, paddingBottom: 10}}>
         <h3>Role #3: Vocabulary Wizard/ Passage Picker</h3>
         <h5>Role: Vocabulary Wizard</h5>
-        <div>
+        <h5>What to do</h5>
+        <li>Find a definition of the word</li>
+        <li>
+          Find the text from podcast/documentary where the vocabulary word was
+          found (one or two sentences)
+        </li>
+        <li>
+          Make 2 interesting discussion questions using both of the words that
+          you have found.
+        </li>
+        <br />
+        {/* <div>
           In any podcast/documentary there are words and expressions that may be
           difficult to understand. Your job is to find any words or expressions
           and inform your group what they mean. Look up the definition in the
@@ -105,12 +143,10 @@ const GroupRoles = () => {
             found (one or two sentences)
           </li>
           <li>
-            A definition of the word The text from podcast/documentary where the
-            vocabulary word was found (one or two sentences) The discussion
-            questions that you have made up. The discussion questions that you
-            have made up.
+            The discussion
+            questions that you have made up.
           </li>
-        </ol>
+        </ol> */}
         <h5>Role: Passage Picker</h5>
         <div>
           Locate a few special sections or quotations in the podcast/documentary
