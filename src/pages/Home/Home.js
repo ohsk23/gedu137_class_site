@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, Container} from 'react-bootstrap';
+import ReactPlayer from 'react-player';
 
 const podcastData = [
   {
@@ -64,9 +65,16 @@ const podcastData = [
       'https://www.npr.org/2019/06/14/732847076/episode-919-are-cities-overrated',
     time: '13 min (listen from minute 3 to 16)',
   },
+  {
+    title: 'The Exclamation Point',
+    type: 'video',
+    date: '10 Aug, Monday',
+    link:
+      'https://lmsvod.postech.ac.kr/vod/20200915015743450157441/MULC_200807120931c32413d5.mp4',
+  },
 ];
 
-const PodcastPanel = ({title, time, date, link}) => {
+const PodcastPanel = ({title, time, date, link, type}) => {
   return (
     <div
       style={{
@@ -89,11 +97,22 @@ const PodcastPanel = ({title, time, date, link}) => {
         <div style={{fontWeight: 600, fontSize: 22, overflow: 'hidden'}}>
           {title}
         </div>
-        <div>{`Podcast Length: ${time}.`}</div>
+        {time && <div>{`Podcast Length: ${time}.`}</div>}
+        {type === 'video' && (
+          <ReactPlayer
+            width="100%"
+            height="auto"
+            style={{paddingTop: 15}}
+            url="https://lmsvod.postech.ac.kr/vod/20200915015743450157441/MULC_200807120931c32413d5.mp4"
+            controls={true}
+          />
+        )}
       </div>
-      <Button style={{alignSelf: 'center'}} href={link}>
-        Go to Podcast
-      </Button>
+      {type !== 'video' && (
+        <Button style={{alignSelf: 'center'}} href={link}>
+          Go to Podcast
+        </Button>
+      )}
     </div>
   );
 };
@@ -101,7 +120,7 @@ const PodcastPanel = ({title, time, date, link}) => {
 const Home = () => {
   return (
     <Container style={{textAlign: 'start', paddingTop: 40, paddingBottom: 40}}>
-      {podcastData.map(({title, date, link, time}, index) => {
+      {podcastData.map(({title, date, link, time, type}, index) => {
         return (
           <>
             {index === 0 && (
@@ -114,11 +133,21 @@ const Home = () => {
                 {`Podcast Schedule Week ${Math.floor(index / 5 + 2)}`}
               </h4>
             )}
-
-            <PodcastPanel title={title} date={date} link={link} time={time} />
+            <PodcastPanel
+              title={title}
+              date={date}
+              link={link}
+              time={time}
+              type={type}
+            />
           </>
         );
       })}
+      {/* 
+      <ReactPlayer
+        url="https://lmsvod.postech.ac.kr/vod/20200915015743450157441/MULC_200807120814c32413d4.mp4"
+        controls={true}
+      /> */}
     </Container>
   );
 };
